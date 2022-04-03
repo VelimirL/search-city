@@ -118,17 +118,23 @@ img {
 }
 
 .searchInput .logo {
-  letter-spacing: -5px;
+  letter-spacing: -10px;
   font-family: "Typewritter", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .searchInput .logo {
+@media only screen and (min-width: 500px) {
+  .searchInput .logo > span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .searchInput .logo > span {
     font-size: 5rem;
-    letter-spacing: -10px;
   }
 }
 

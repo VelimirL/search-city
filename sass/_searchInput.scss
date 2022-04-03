@@ -3,15 +3,23 @@
   padding-top: 40px;
 
   .logo {
-    letter-spacing: -5px;
+    letter-spacing: -10px;
     font-family: $font-stack;
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
-    @include mq(768px) {
-      font-size: 5rem;
-      letter-spacing: -10px;
+    text-align: center;
+    @include mq(500px) {
+      & > span {
+      font-size: 4rem;
+      } 
     }
+    @include mq(640px) {
+      & > span {
+      font-size: 5rem;
+      } 
+    }
+
   }
 
   .searchBar {
